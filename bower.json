@@ -1,0 +1,26 @@
+{
+  "name": "rfi",
+  "version": "1.0.0",
+  "homepage": "https://github.com/AIDUSA/rfi",
+  "authors": [
+    "Sisil Mehta"
+  ],
+  "description": "Website for RFI",
+  "main": "index.html",
+  "keywords": [
+    "rfi",
+    "aid"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.3"
+  }
+}

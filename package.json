@@ -1,0 +1,40 @@
+{
+  "name": "rfi",
+  "version": "1.0.0",
+  "description": "Run For India website for Association for India's Developement",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AIDUSA/rfi.git"
+  },
+  "keywords": [
+    "aid",
+    "rfi"
+  ],
+  "author": "sisil mehta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AIDUSA/rfi/issues"
+  },
+  "homepage": "https://github.com/AIDUSA/rfi",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "compression": "^1.4.3",
+    "express": "^4.12.3",
+    "morgan": "^1.5.2",
+    "serve-favicon": "^2.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.6.4",
+    "gulp": "^3.8.11",
+    "gulp-inject": "^1.2.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-nodemon": "^2.0.2",
+    "gulp-task-listing": "^1.0.0",
+    "gulp-util": "^3.0.4",
+    "wiredep": "^2.2.2"
+  }
+}
