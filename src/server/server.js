@@ -26,8 +26,9 @@ switch(environment) {
         app.use(logger('combined'));
         app.use(express.static('./'));
         app.use(express.static('./src/client/'));
+        app.use(express.static('./src/client/html/'));
         app.use('*', function(req, res) {
-            res.sendFile(process.cwd() + '/src/client/index.html');
+            res.sendFile(process.cwd() + '/src/client/html/index.html');
         });
         break;
 }

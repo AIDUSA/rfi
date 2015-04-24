@@ -11,7 +11,7 @@ module.exports = function() {
         build: './compiled/',
         client: './src/client/',
         css: './src/client/css/*.css',
-        index: './src/client/index.html',
+        index: './src/client/html/index.html',
         html: './src/client/html/',
         js: [
             './src/client/js/*.js'
