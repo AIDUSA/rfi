@@ -275,17 +275,16 @@ left: 0;
 								<button type="button" class="btn btn-default" id="submit">
 									Submit
 								</button>
+								<div id="alert" class="form-group" role="alert">
+									<p id="alert-detail"></p>
+								</div>
 							</form>
 						</div>
 						<div class="col-xs-12 col-sm-5 col-sm-offset-1 contact-address">
 							<h2>Get in touch</h2>
 							<address>
-								<span> <strong>Address :</strong> <span>A-2, Sector-63,
-										<br>
-										Noida, 201301, India</span> </span>
-								<span> <strong>E-Mail :</strong> <span><a href="mailto:contact@charity.com">contact@charity.com</a></span> </span>
-								<span> <strong>Tel :</strong> <span><a href="tel:+17079217269">+1 707 921 7269</a></span> </span>
-								<span> <strong>Fax :</strong> <span>+1 206 973 7944</span> </span>
+								<span> Drop us an email and let us know what you think. <br/>
+									You can also visit the chapter specific pages to get in touch with a particular chapter. </span>
 							</address>
 						</div>
 					</div>
@@ -385,5 +384,35 @@ left: 0;
 		<!--Main Slider Js End -->
 		<script src="assets/js/jquery.flexslider.js"></script>
 		<script src="assets/js/site.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#submit').click(function() {
+					console.log('submitting email.');
+
+					var fromEmail = $('#email').val();
+					var fromName = $('#name').val();
+					var fromSubject = $('#sub').val();
+					var fromMessage = $('#message').val();
+
+					$.ajax({
+						url: '/contact-us/email',
+						method: 'POST',
+						dataType: 'json',
+						data: {
+							name: fromName,
+							email: fromEmail,
+							subject: fromSubject,
+							message: fromMessage
+						},
+						error: function(data, status, jqXHR) {
+							$('#alert-detail').text('Unable to send email. Please try again later.');
+						},
+						success: function(data, status, jqXHR) {
+							$('#alert-detail').text('Email sent. We will get back to you soon.');
+						}
+					});
+				});
+			});
+		</script>
 	</body>
 </html>
