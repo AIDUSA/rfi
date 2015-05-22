@@ -63,6 +63,14 @@ function sendEmail ( _name, _email, _subject, _message, callback) {
 
 switch(environment) {
     case 'production':
+        console.log('**PRODUCTION**');
+        app.use(logger('combined'));
+        app.use(express.static('./'));
+        app.use(express.static('./src/client/'));
+        app.use(express.static('./src/client/html/'));
+        app.use('*', function(req, res) {
+            res.sendFile(process.cwd() + '/src/client/html/index.html');
+        });
         break;
     case 'development':
         console.log('**DEVELOPMENT**');

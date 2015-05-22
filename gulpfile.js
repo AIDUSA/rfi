@@ -28,6 +28,23 @@ gulp.task('serve-dev', ['wiredep'], function() {
     serve(env);
 });
 
+gulp.task('serve-prod', ['build'], function() {
+    var env = config.env['production'];
+    serve(env);
+});
+gulp.task('build', ['optimize'], function() {
+    log('Building everything');
+
+    var msg = {
+        title: 'gulp build',
+        subtitle: 'Deployed to the build folder',
+        message: 'Running `gulp serve-build`'
+    };
+    log(msg);
+});
+gulp.task('optimize', ['wiredep'], function() {
+    log('Optimizing the js, css, and html - Maybe someday. Nothing to optimize today.');
+});
 /////
 function serve(env) {
     var options = {

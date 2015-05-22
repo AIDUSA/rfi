@@ -8,6 +8,7 @@ module.exports = function() {
             './src/server/**/*.js',
             './*.js'
         ],
+        temp: './.tmp/',
         build: './compiled/',
         client: './src/client/',
         css: './src/client/css/*.css',

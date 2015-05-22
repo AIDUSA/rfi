@@ -587,12 +587,77 @@ blockquote footer:before, .blockquote-reverse footer:after {
  3.12)Breadcrumb Banner Section 
  ----------------------------------------*/
 .breadcrumb-section {
-	background: url(../img/breadcrumb-bg.jpg) center 37.3% no-repeat;
+	background: url(../img/breadcrumbbg.jpg) center 37.3% no-repeat;
 	background-size: cover;
 	padding: 31px 0 42px;
 /*	margin-bottom: 59px;*/
 }
 .breadcrumb-section h1 {
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.breadcrumb-featuredprojects-section {
+	background: url(../img/breadcrumb_featuredprojects.jpg) center 37.3% no-repeat;
+	background-size: cover;
+	padding: 31px 0 42px;
+/*	margin-bottom: 59px;*/
+}
+.breadcrumb-featuredprojects-section h1 {
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.breadcrumb-gallery-section {
+	background: url(../img/breadcrumb_gallery.jpg) center 37.3% no-repeat;
+	background-size: cover;
+	padding: 31px 0 42px;
+/*	margin-bottom: 59px;*/
+}
+.breadcrumb-gallery-section h1 {
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.breadcrumb-contactus-section {
+	background: url(../img/breadcrumb_contactus.jpg) center 37.3% no-repeat;
+	background-size: cover;
+	padding: 31px 0 42px;
+/*	margin-bottom: 59px;*/
+}
+.breadcrumb-contactus-section h1 {
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.breadcrumb-runwithus-section {
+	background: url(../img/breadcrumb_runwithus.jpg) center 37.3% no-repeat;
+	background-size: cover;
+	padding: 31px 0 42px;
+/*	margin-bottom: 59px;*/
+}
+.breadcrumb-runwithus-section h1 {
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.breadcrumb-alum-section {
+	background: url(../img/breadcrumb_alum.jpg) center 37.3% no-repeat;
+	background-size: cover;
+	padding: 31px 0 42px;
+/*	margin-bottom: 59px;*/
+}
+.breadcrumb-alum-section h1 {
+	font-weight: 700;
+	margin-bottom: 0;
+}
+.breadcrumb-program-section {
+	background: url(../img/breadcrumb_program.jpg) center 37.3% no-repeat;
+	background-size: cover;
+	padding: 31px 0 42px;
+/*	margin-bottom: 59px;*/
+}
+.breadcrumb-program-section h1 {
 	font-weight: 700;
 	margin-bottom: 0;
 }
@@ -732,6 +797,7 @@ blockquote footer:before, .blockquote-reverse footer:after {
 	background: #26211d;
 	position:relative;
 	z-index:99;
+	
 }
 #header.header-third{
 	background:#f2ede9;
